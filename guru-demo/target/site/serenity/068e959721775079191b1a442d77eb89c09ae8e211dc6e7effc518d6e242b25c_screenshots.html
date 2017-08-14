@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="4651195b9e8774e7a3fa6b0277603c9f39f6c31eb80494b02eac84a52b115242.html">Account Can Deposit</a>
+                > <a
+                    href="068e959721775079191b1a442d77eb89c09ae8e211dc6e7effc518d6e242b25c.html">New account deposit with description blank </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-08-2017 16:26</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Account Can Deposit </span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order verify deposit function
+As a new account
+I want to deposit money
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="8b239c58e6ea37a9d9400410ef754066bca5b4628f2d49ba2e6c636fa48b7290.html">Create Customer Account And Use Banking Services
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">New Account Deposit With Description Blank
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given User login with "&lt;userId&gt;" and "&lt;password&gt;" successfully<br>And New account want to deposit<br>When New account input "&lt;accountNo&gt;" and "&lt;amount&gt;" and "&lt;description&gt;" and submit<br>Then Alert "&lt;alertText&gt;" is displayed<br></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="fc12c096b58b7ea95f763bf87c4f4e7bb596669f736f6ad131ca6ddab3b4fc24.png" title="Given User login with &quot;{mngr91821}&quot; and &quot;{udaneqE}&quot; successfully" width="960"/>
+                <img src="871657ed8e462616edb616a9c39e29a1ea87f1958be3801a2e8e84a6a2e5ad9c.png" title="Open guru99 home page" width="960"/>
+                <img src="871657ed8e462616edb616a9c39e29a1ea87f1958be3801a2e8e84a6a2e5ad9c.png" title="Login to guru99: mngr91821, udaneqE" width="960"/>
+                <img src="d3717633e01971afa7e546b56a49f101487e3e46f427291040ca9a435173ee49.png" title="Login to guru99: mngr91821, udaneqE" width="960"/>
+                <img src="00d2b920c2830cdd6ecadcccb89f1748ffcc267401100bbebf9ed6e08bc0f4cc.png" title="Verify user login successfully" width="960"/>
+                <img src="c0863c4016739ef7b029e73af9386eb6a63d2f35d7ad82d78eabe4f3dd5bd817.png" title="Verify user login successfully" width="960"/>
+                <img src="0bab6a0af092f5179dcedf94bafaeafe6712b32e7a206499a0f49e3d863ef651.png" title="And New account want to deposit" width="960"/>
+                <img src="4a9d6c33d453f417809e14df5fb3d3fdb2d61e30f78b2fff6bb1d5df76f2c452.png" title="And New account want to deposit" width="960"/>
+                <img src="85d530ed76254154dc9211c4b679d2f73ef4db3bd13fe6e6364ff8d1cbac3816.png" title="Open deposit page" width="960"/>
+                <img src="4a9d6c33d453f417809e14df5fb3d3fdb2d61e30f78b2fff6bb1d5df76f2c452.png" title="Open deposit page" width="960"/>
+                <img src="4a9d6c33d453f417809e14df5fb3d3fdb2d61e30f78b2fff6bb1d5df76f2c452.png" title="When New account input &quot;{31552}&quot; and &quot;{3000000}&quot; and &quot;{}&quot; and submit" width="960"/>
+                <img src="6aed4918e1209de0aaf061f3f450eabd79ecff820b6a6cca3af3a28ba8220150.png" title="When New account input &quot;{31552}&quot; and &quot;{3000000}&quot; and &quot;{}&quot; and submit" width="960"/>
+                <img src="4a9d6c33d453f417809e14df5fb3d3fdb2d61e30f78b2fff6bb1d5df76f2c452.png" title="Input deposit info: 31552, 3000000, " width="960"/>
+                <img src="200651f282581c255cbd2344c7f49c3d1332a28b84e553c7f581f34e15f881b5.png" title="Input deposit info: 31552, 3000000, " width="960"/>
+                <img src="200651f282581c255cbd2344c7f49c3d1332a28b84e553c7f581f34e15f881b5.png" title="Click on submit button" width="960"/>
+                <img src="6aed4918e1209de0aaf061f3f450eabd79ecff820b6a6cca3af3a28ba8220150.png" title="Click on submit button" width="960"/>
+                <img src="6aed4918e1209de0aaf061f3f450eabd79ecff820b6a6cca3af3a28ba8220150.png" title="Then Alert &quot;{please fill all fields}&quot; is displayed: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

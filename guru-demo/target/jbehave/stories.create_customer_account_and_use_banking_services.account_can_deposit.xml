@@ -1,0 +1,112 @@
+<story path="stories/create_customer_account_and_use_banking_services/account_can_deposit.story" title="">
+<scenario keyword="Scenario:" title="User create new customer successfully">
+</scenario>
+<scenario keyword="Scenario:" title="New account deposit successfully">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</step>
+<step>Then New account has deposited</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>31552</value><value>3000000</value><value>thang 4</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=thang 4}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter>31552</parameter>&quot; and &quot;<parameter>3000000</parameter>&quot; and &quot;<parameter>thang 4</parameter>&quot; and submit</step>
+<step outcome="successful">Then New account has deposited</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="Reset all fields of Deposit page">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and reset</step>
+<step>Then All fields of deposit page blank</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>31552</value><value>3000000</value><value>thang 4</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=thang 4}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter>31552</parameter>&quot; and &quot;<parameter>3000000</parameter>&quot; and &quot;<parameter>thang 4</parameter>&quot; and reset</step>
+<step outcome="successful">Then All fields of deposit page blank</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="New account deposit with accountNo blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value></value><value>3000000</value><value>thang 4</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=, amount=3000000, description=thang 4, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter></parameter>&quot; and &quot;<parameter>3000000</parameter>&quot; and &quot;<parameter>thang 4</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="New account deposit with amount blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>31552</value><value></value><value>thang 4</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=31552, amount=, description=thang 4, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter>31552</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>thang 4</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="New account deposit with description blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>31552</value><value>3000000</value><value></value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter>31552</parameter>&quot; and &quot;<parameter>3000000</parameter>&quot; and &quot;<parameter></parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="New account deposit with wrong accountNo">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And New account want to deposit</step>
+<step>When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>accountNo</name><name>amount</name><name>description</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>31</value><value>3000000</value><value>thang 4</value><value>Account does not exist</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, accountNo=31, amount=3000000, description=thang 4, alertText=Account does not exist}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And New account want to deposit</step>
+<step outcome="successful">When New account input &quot;<parameter>31</parameter>&quot; and &quot;<parameter>3000000</parameter>&quot; and &quot;<parameter>thang 4</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>Account does not exist</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+</story>

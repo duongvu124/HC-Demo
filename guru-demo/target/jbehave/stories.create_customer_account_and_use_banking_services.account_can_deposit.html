@@ -1,0 +1,163 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/create_customer_account_and_use_banking_services/account_can_deposit.story</div>
+<div class="scenario">
+<h2>Scenario: User create new customer successfully</h2>
+</div>
+<div class="scenario">
+<h2>Scenario: New account deposit successfully</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</div>
+<div class="step">Then New account has deposited</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>31552</td><td>3000000</td><td>thang 4</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=thang 4}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter">31552</span>&quot; and &quot;<span class="step parameter">3000000</span>&quot; and &quot;<span class="step parameter">thang 4</span>&quot; and submit</div>
+<div class="step successful">Then New account has deposited</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Reset all fields of Deposit page</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and reset</div>
+<div class="step">Then All fields of deposit page blank</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>31552</td><td>3000000</td><td>thang 4</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=thang 4}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter">31552</span>&quot; and &quot;<span class="step parameter">3000000</span>&quot; and &quot;<span class="step parameter">thang 4</span>&quot; and reset</div>
+<div class="step successful">Then All fields of deposit page blank</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: New account deposit with accountNo blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td></td><td>3000000</td><td>thang 4</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=, amount=3000000, description=thang 4, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">3000000</span>&quot; and &quot;<span class="step parameter">thang 4</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: New account deposit with amount blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>31552</td><td></td><td>thang 4</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=31552, amount=, description=thang 4, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter">31552</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">thang 4</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: New account deposit with description blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>31552</td><td>3000000</td><td></td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=31552, amount=3000000, description=, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter">31552</span>&quot; and &quot;<span class="step parameter">3000000</span>&quot; and &quot;<span class="step parameter"></span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: New account deposit with wrong accountNo</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New account want to deposit</div>
+<div class="step">When New account input &quot;&lt;accountNo&gt;&quot; and &quot;&lt;amount&gt;&quot; and &quot;&lt;description&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>accountNo</th><th>amount</th><th>description</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>31</td><td>3000000</td><td>thang 4</td><td>Account does not exist</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, accountNo=31, amount=3000000, description=thang 4, alertText=Account does not exist}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New account want to deposit</div>
+<div class="step successful">When New account input &quot;<span class="step parameter">31</span>&quot; and &quot;<span class="step parameter">3000000</span>&quot; and &quot;<span class="step parameter">thang 4</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">Account does not exist</span>&quot; is displayed</div>
+</div>
+</div>
+</div>

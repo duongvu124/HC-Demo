@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="a892d34184261925a37389049e7cc0403756e61fdd03de13a2cedd0e2d23ebc0.html">Customer Can Be Created</a>
+                > <a
+                    href="404b647b9c6fd5e941776e766e029d0e7c617714dddee0c758ae2b68cef81e46.html">All fields of new customer page blank </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-08-2017 16:27</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Customer Can Be Created </span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order verify customer creation function
+As a new user
+I want to create new customer
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="8b239c58e6ea37a9d9400410ef754066bca5b4628f2d49ba2e6c636fa48b7290.html">Create Customer Account And Use Banking Services
+                                    (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">All Fields Of New Customer Page Blank
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given User login with "&lt;userId&gt;" and "&lt;password&gt;" successfully<br>And User want to create new customer<br>When User input "&lt;name&gt;" and "&lt;gender&gt;" and "&lt;dob&gt;" and "&lt;address&gt;" and "&lt;citi&gt;" and "&lt;state&gt;" and "&lt;pin&gt;" and "&lt;mobile&gt;" and "&lt;email&gt;" and "&lt;pass&gt;" and reset<br>Then All fields of new customer page blank<br></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="9a89e51bea08505ecc399112a6a68f5173cf7d7b04463a062e2fc216c2248ddd.png" title="Given User login with &quot;{mngr91821}&quot; and &quot;{udaneqE}&quot; successfully" width="960"/>
+                <img src="871657ed8e462616edb616a9c39e29a1ea87f1958be3801a2e8e84a6a2e5ad9c.png" title="Open guru99 home page" width="960"/>
+                <img src="871657ed8e462616edb616a9c39e29a1ea87f1958be3801a2e8e84a6a2e5ad9c.png" title="Login to guru99: mngr91821, udaneqE" width="960"/>
+                <img src="1082ab86d1d874bc32597b6008f2e46a6aee5aa781c2b8c12e33ee2ed8872e65.png" title="Login to guru99: mngr91821, udaneqE" width="960"/>
+                <img src="53beaa5719181cac37721d0ef8ef9869faf4f76dfad6dab5ce8570ba3adceb5c.png" title="Verify user login successfully" width="960"/>
+                <img src="4f7e9ea3fe32f46c0468c2cb4e4a247c659da55e94214d59615144ad0198f7b1.png" title="Verify user login successfully" width="960"/>
+                <img src="eb5bd0aaf3255b235a3d2c390e868a76be41e651bb9e52ad4a5fac63c0854fcc.png" title="And User want to create new customer" width="960"/>
+                <img src="2594ba00900fdf5bf7889d63c3aac85400942f4ac961b27d57d8f082f00c1315.png" title="And User want to create new customer" width="960"/>
+                <img src="5ded2f648f045e97fded632c3c09afc664ac8ff13b4d9f60d4ae3c9746a08e49.png" title="Open new customer page" width="960"/>
+                <img src="2594ba00900fdf5bf7889d63c3aac85400942f4ac961b27d57d8f082f00c1315.png" title="Open new customer page" width="960"/>
+                <img src="2594ba00900fdf5bf7889d63c3aac85400942f4ac961b27d57d8f082f00c1315.png" title="When User input &quot;{Duong}&quot; and &quot;{male}&quot; and &quot;{12/04/1988}&quot; and &quot;{2 Ngo Duc Ke}&quot; and &quot;{HCM}&quot; and &quot;{VN}&quot; and &quot;{123456}&quot; and &quot;{0902646433}&quot; and &quot;{duong_vu153@yahoo.com}&quot; and &quot;{123456}&quot; and reset" width="960"/>
+                <img src="801fa97e929d276739f9634d1d9f91e7a4b7fb0ac28d87c332f0218aecde90ae.png" title="When User input &quot;{Duong}&quot; and &quot;{male}&quot; and &quot;{12/04/1988}&quot; and &quot;{2 Ngo Duc Ke}&quot; and &quot;{HCM}&quot; and &quot;{VN}&quot; and &quot;{123456}&quot; and &quot;{0902646433}&quot; and &quot;{duong_vu153@yahoo.com}&quot; and &quot;{123456}&quot; and reset" width="960"/>
+                <img src="2594ba00900fdf5bf7889d63c3aac85400942f4ac961b27d57d8f082f00c1315.png" title="Input new customer info: Duong, male, 12/04/1988, 2 Ngo Duc Ke, HCM, VN, 123456, 0902646433, duong_vu153@yahoo.com, 123456" width="960"/>
+                <img src="2b39752988fa53895f9fbd607bc9f81910199219818838ca85487f6c041429b5.png" title="Input new customer info: Duong, male, 12/04/1988, 2 Ngo Duc Ke, HCM, VN, 123456, 0902646433, duong_vu153@yahoo.com, 123456" width="960"/>
+                <img src="2b39752988fa53895f9fbd607bc9f81910199219818838ca85487f6c041429b5.png" title="Reset" width="960"/>
+                <img src="801fa97e929d276739f9634d1d9f91e7a4b7fb0ac28d87c332f0218aecde90ae.png" title="Reset" width="960"/>
+                <img src="801fa97e929d276739f9634d1d9f91e7a4b7fb0ac28d87c332f0218aecde90ae.png" title="Then All fields of new customer page blank" width="960"/>
+                <img src="801fa97e929d276739f9634d1d9f91e7a4b7fb0ac28d87c332f0218aecde90ae.png" title="Verify all fields of new account page blank: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<story path="stories/create_customer_account_and_use_banking_services/customer_can_be_created.story" title="">
+<scenario keyword="Scenario:" title="User create new customer successfully">
+<meta>
+<property keyword="@" name="tag" value="component:UI"/>
+</meta>
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then New customer is created</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu161@yahoo.com</value><value>123456</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu161@yahoo.com, pass=123456, tag=component:UI}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu161@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then New customer is created</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="All fields of new customer page blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and reset</step>
+<step>Then All fields of new customer page blank</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu153@yahoo.com</value><value>123456</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu153@yahoo.com, pass=123456}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu153@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and reset</step>
+<step outcome="successful">Then All fields of new customer page blank</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with email address already exist">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu146@yahoo.com</value><value>123456</value><value>Email Address Already Exist !!</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu146@yahoo.com, pass=123456, alertText=Email Address Already Exist !!}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu146@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>Email Address Already Exist !!</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer name blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value></value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter></parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer DOB blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value></value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer address blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value></value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer citi blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value></value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer state blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value></value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer PIN blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value></value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer mobile blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value></value><value>duong_vu140@yahoo.com</value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer email address blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value></value><value>123456</value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=, pass=123456, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter></parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="User create new customer with customer pass blank">
+<examples keyword="Examples:">
+<step>Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</step>
+<step>And User want to create new customer</step>
+<step>When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</step>
+<step>Then Alert &quot;&lt;alertText&gt;&quot; is displayed</step>
+<parameters>
+<names><name>userId</name><name>password</name><name>name</name><name>gender</name><name>dob</name><name>address</name><name>citi</name><name>state</name><name>pin</name><name>mobile</name><name>email</name><name>pass</name><name>alertText</name></names>
+<values><value>mngr91821</value><value>udaneqE</value><value>Duong</value><value>male</value><value>12/04/1988</value><value>2 Ngo Duc Ke</value><value>HCM</value><value>VN</value><value>123456</value><value>0902646433</value><value>duong_vu140@yahoo.com</value><value></value><value>please fill all fields</value></values>
+</parameters>
+
+<example keyword="Example:">{userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=, alertText=please fill all fields}</example>
+<step outcome="successful">Given User login with &quot;<parameter>mngr91821</parameter>&quot; and &quot;<parameter>udaneqE</parameter>&quot; successfully</step>
+<step outcome="successful">And User want to create new customer</step>
+<step outcome="successful">When User input &quot;<parameter>Duong</parameter>&quot; and &quot;<parameter>male</parameter>&quot; and &quot;<parameter>12/04/1988</parameter>&quot; and &quot;<parameter>2 Ngo Duc Ke</parameter>&quot; and &quot;<parameter>HCM</parameter>&quot; and &quot;<parameter>VN</parameter>&quot; and &quot;<parameter>123456</parameter>&quot; and &quot;<parameter>0902646433</parameter>&quot; and &quot;<parameter>duong_vu140@yahoo.com</parameter>&quot; and &quot;<parameter></parameter>&quot; and submit</step>
+<step outcome="successful">Then Alert &quot;<parameter>please fill all fields</parameter>&quot; is displayed</step>
+</examples>
+</scenario>
+</story>

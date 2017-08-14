@@ -1,0 +1,7 @@
+net/serenitybdd/demos/todos/steps/LoginToGuruSteps.class
+net/serenitybdd/demos/todos/CreateCustomerAccountAndUseBankingServices.class
+net/serenitybdd/demos/todos/stepdefinitions/CreateNewAccountStepsDefinitions.class
+net/serenitybdd/demos/todos/stepdefinitions/CreateNewCustomerStepsDefinitions.class
+net/serenitybdd/demos/todos/steps/NewAccountSteps.class
+net/serenitybdd/demos/todos/steps/NewCustomerSteps.class
+net/serenitybdd/demos/todos/stepdefinitions/NewAccountDepositStepsDefinitions.class

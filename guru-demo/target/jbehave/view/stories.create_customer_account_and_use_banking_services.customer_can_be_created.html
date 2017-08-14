@@ -1,0 +1,352 @@
+<html>
+<head>
+<title>stories.create_customer_account_and_use_banking_services.customer_can_be_created</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/create_customer_account_and_use_banking_services/customer_can_be_created.story</div>
+<div class="scenario">
+<h2>Scenario: User create new customer successfully</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@tag component:UI</div>
+</div>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then New customer is created</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu161@yahoo.com</td><td>123456</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu161@yahoo.com, pass=123456, tag=component:UI}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu161@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then New customer is created</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: All fields of new customer page blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and reset</div>
+<div class="step">Then All fields of new customer page blank</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu153@yahoo.com</td><td>123456</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu153@yahoo.com, pass=123456}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu153@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and reset</div>
+<div class="step successful">Then All fields of new customer page blank</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with email address already exist</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu146@yahoo.com</td><td>123456</td><td>Email Address Already Exist !!</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu146@yahoo.com, pass=123456, alertText=Email Address Already Exist !!}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu146@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">Email Address Already Exist !!</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer name blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td></td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer DOB blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td></td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer address blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td></td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer citi blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td></td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer state blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td></td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer PIN blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td></td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=, mobile=0902646433, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer mobile blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td></td><td>duong_vu140@yahoo.com</td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=, email=duong_vu140@yahoo.com, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer email address blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td></td><td>123456</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=, pass=123456, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User create new customer with customer pass blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And User want to create new customer</div>
+<div class="step">When User input &quot;&lt;name&gt;&quot; and &quot;&lt;gender&gt;&quot; and &quot;&lt;dob&gt;&quot; and &quot;&lt;address&gt;&quot; and &quot;&lt;citi&gt;&quot; and &quot;&lt;state&gt;&quot; and &quot;&lt;pin&gt;&quot; and &quot;&lt;mobile&gt;&quot; and &quot;&lt;email&gt;&quot; and &quot;&lt;pass&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>name</th><th>gender</th><th>dob</th><th>address</th><th>citi</th><th>state</th><th>pin</th><th>mobile</th><th>email</th><th>pass</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>Duong</td><td>male</td><td>12/04/1988</td><td>2 Ngo Duc Ke</td><td>HCM</td><td>VN</td><td>123456</td><td>0902646433</td><td>duong_vu140@yahoo.com</td><td></td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, name=Duong, gender=male, dob=12/04/1988, address=2 Ngo Duc Ke, citi=HCM, state=VN, pin=123456, mobile=0902646433, email=duong_vu140@yahoo.com, pass=, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And User want to create new customer</div>
+<div class="step successful">When User input &quot;<span class="step parameter">Duong</span>&quot; and &quot;<span class="step parameter">male</span>&quot; and &quot;<span class="step parameter">12/04/1988</span>&quot; and &quot;<span class="step parameter">2 Ngo Duc Ke</span>&quot; and &quot;<span class="step parameter">HCM</span>&quot; and &quot;<span class="step parameter">VN</span>&quot; and &quot;<span class="step parameter">123456</span>&quot; and &quot;<span class="step parameter">0902646433</span>&quot; and &quot;<span class="step parameter">duong_vu140@yahoo.com</span>&quot; and &quot;<span class="step parameter"></span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

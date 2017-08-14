@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>stories.create_customer_account_and_use_banking_services.account_can_be_created</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/create_customer_account_and_use_banking_services/account_can_be_created.story</div>
+<div class="scenario">
+<h2>Scenario: New customer create new account successfully</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@tag component:UI</div>
+</div>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New customer want to create account</div>
+<div class="step">When New customer input &quot;&lt;customerId&gt;&quot; and &quot;&lt;accountType&gt;&quot; and &quot;&lt;deposit&gt;&quot; and submit</div>
+<div class="step">Then Account is created</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>customerId</th><th>accountType</th><th>deposit</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>7086</td><td>Current</td><td>120000</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, customerId=7086, accountType=Current, deposit=120000, tag=component:UI}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New customer want to create account</div>
+<div class="step successful">When New customer input &quot;<span class="step parameter">7086</span>&quot; and &quot;<span class="step parameter">Current</span>&quot; and &quot;<span class="step parameter">120000</span>&quot; and submit</div>
+<div class="step successful">Then Account is created</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Reset all fields of new account page</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New customer want to create account</div>
+<div class="step">When New customer input &quot;&lt;customerId&gt;&quot; and &quot;&lt;accountType&gt;&quot; and &quot;&lt;deposit&gt;&quot; and reset</div>
+<div class="step">Then All fields of new account page blank</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>customerId</th><th>accountType</th><th>deposit</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>7086</td><td>Current</td><td>120000</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, customerId=7086, accountType=Current, deposit=120000}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New customer want to create account</div>
+<div class="step successful">When New customer input &quot;<span class="step parameter">7086</span>&quot; and &quot;<span class="step parameter">Current</span>&quot; and &quot;<span class="step parameter">120000</span>&quot; and reset</div>
+<div class="step successful">Then All fields of new account page blank</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Customer create new account with customer id blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New customer want to create account</div>
+<div class="step">When New customer input &quot;&lt;customerId&gt;&quot; and &quot;&lt;accountType&gt;&quot; and &quot;&lt;deposit&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>customerId</th><th>accountType</th><th>deposit</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td></td><td>Current</td><td>120000</td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, customerId=, accountType=Current, deposit=120000, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New customer want to create account</div>
+<div class="step successful">When New customer input &quot;<span class="step parameter"></span>&quot; and &quot;<span class="step parameter">Current</span>&quot; and &quot;<span class="step parameter">120000</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Customer create new account with initial deposit blank</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New customer want to create account</div>
+<div class="step">When New customer input &quot;&lt;customerId&gt;&quot; and &quot;&lt;accountType&gt;&quot; and &quot;&lt;deposit&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>customerId</th><th>accountType</th><th>deposit</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>7086</td><td>Current</td><td></td><td>please fill all fields</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, customerId=7086, accountType=Current, deposit=, alertText=please fill all fields}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New customer want to create account</div>
+<div class="step successful">When New customer input &quot;<span class="step parameter">7086</span>&quot; and &quot;<span class="step parameter">Current</span>&quot; and &quot;<span class="step parameter"></span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">please fill all fields</span>&quot; is displayed</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Customer create new account with wrong customer id</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given User login with &quot;&lt;userId&gt;&quot; and &quot;&lt;password&gt;&quot; successfully</div>
+<div class="step">And New customer want to create account</div>
+<div class="step">When New customer input &quot;&lt;customerId&gt;&quot; and &quot;&lt;accountType&gt;&quot; and &quot;&lt;deposit&gt;&quot; and submit</div>
+<div class="step">Then Alert &quot;&lt;alertText&gt;&quot; is displayed</div>
+<table>
+<thead>
+<tr>
+<th>userId</th><th>password</th><th>customerId</th><th>accountType</th><th>deposit</th><th>alertText</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>mngr91821</td><td>udaneqE</td><td>76</td><td>Current</td><td>120000</td><td>Customer does not exist!!</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {userId=mngr91821, password=udaneqE, customerId=76, accountType=Current, deposit=120000, alertText=Customer does not exist!!}</h3>
+<div class="step successful">Given User login with &quot;<span class="step parameter">mngr91821</span>&quot; and &quot;<span class="step parameter">udaneqE</span>&quot; successfully</div>
+<div class="step successful">And New customer want to create account</div>
+<div class="step successful">When New customer input &quot;<span class="step parameter">76</span>&quot; and &quot;<span class="step parameter">Current</span>&quot; and &quot;<span class="step parameter">120000</span>&quot; and submit</div>
+<div class="step successful">Then Alert &quot;<span class="step parameter">Customer does not exist!!</span>&quot; is displayed</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

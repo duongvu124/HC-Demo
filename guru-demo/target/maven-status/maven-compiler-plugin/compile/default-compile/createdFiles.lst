@@ -1,0 +1,6 @@
+net/serenitybdd/demos/todos/pages/GuruHomePage.class
+net/serenitybdd/demos/todos/pages/components/FilterBar.class
+net/serenitybdd/demos/todos/pages/components/ToDoList.class
+net/serenitybdd/demos/todos/pages/NewAccountPage.class
+net/serenitybdd/demos/todos/pages/NewCustomerPage.class
+net/serenitybdd/demos/todos/pages/DepositPage.class

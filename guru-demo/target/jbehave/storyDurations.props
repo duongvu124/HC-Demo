@@ -1,0 +1,8 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Aug 14 16:30:05 ICT 2017
+stories/create_customer_account_and_use_banking_services/account_can_be_created.story=66000
+stories/create_customer_account_and_use_banking_services/customer_can_be_created.story=164000
+stories/create_customer_account_and_use_banking_services/account_can_deposit.story=65000
+threads=1
+total=295000
+threadAverage=295000
