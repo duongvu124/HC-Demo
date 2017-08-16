@@ -28,7 +28,7 @@ Examples:
 |mngr91821|udaneqE|7086|Current|120000
 
 
-Scenario: Customer create new account with customer id blank
+Scenario: New customer enter blank info when creating new account
 Given User login with "<userId>" and "<password>" successfully
 And New customer want to create account
 When New customer input "<customerId>" and "<accountType>" and "<deposit>" and submit
@@ -36,15 +36,6 @@ Then Alert "<alertText>" is displayed
 Examples:
 |userId|password|customerId|accountType|deposit|alertText
 |mngr91821|udaneqE||Current|120000|please fill all fields
-
-
-Scenario: Customer create new account with initial deposit blank
-Given User login with "<userId>" and "<password>" successfully
-And New customer want to create account
-When New customer input "<customerId>" and "<accountType>" and "<deposit>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|customerId|accountType|deposit|alertText
 |mngr91821|udaneqE|7086|Current||please fill all fields
 
 

@@ -14,7 +14,7 @@ When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>"
 Then New customer is created
 Examples:
 |userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass
-|mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu162@yahoo.com|123456
+|mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu171@yahoo.com|123456
 
 
 Scenario: All fields of new customer page blank
@@ -36,7 +36,7 @@ Examples:
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu146@yahoo.com|123456|Email Address Already Exist !!
 
 
-Scenario: User create new customer with customer name blank
+Scenario: User enter blank info when creating new customer
 Given User login with "<userId>" and "<password>" successfully
 And User want to create new customer
 When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
@@ -44,83 +44,11 @@ Then Alert "<alertText>" is displayed
 Examples:
 |userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE||male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer DOB blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male||2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer address blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988||HCM|VN|123456|0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer citi blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke||VN|123456|0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer state blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM||123456|0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer PIN blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN||0902646433|duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer mobile blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456||duong_vu140@yahoo.com|123456|please fill all fields
-
-
-Scenario: User create new customer with customer email address blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433||123456|please fill all fields
-
-
-Scenario: User create new customer with customer pass blank
-Given User login with "<userId>" and "<password>" successfully
-And User want to create new customer
-When User input "<name>" and "<gender>" and "<dob>" and "<address>" and "<citi>" and "<state>" and "<pin>" and "<mobile>" and "<email>" and "<pass>" and submit
-Then Alert "<alertText>" is displayed
-Examples:
-|userId|password|name|gender|dob|address|citi|state|pin|mobile|email|pass|alertText
 |mngr91821|udaneqE|Duong|male|12/04/1988|2 Ngo Duc Ke|HCM|VN|123456|0902646433|duong_vu140@yahoo.com||please fill all fields
